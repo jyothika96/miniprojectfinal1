@@ -1,0 +1,30 @@
+{
+  "name": "community-disease-surveillance-server",
+  "version": "1.0.0",
+  "description": "Backend API for Community Disease Surveillance and Early-Warning System",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "db:setup": "node src/config/setupDb.js",
+    "db:add-public-user": "node src/config/addPublicUser.js"
+  },
+  "keywords": [
+    "disease-surveillance",
+    "public-health",
+    "epidemiology",
+    "early-warning-system",
+    "express",
+    "mysql"
+  ],
+  "author": "Antigravity Pair Programmer",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.12.0"
+  }
+}

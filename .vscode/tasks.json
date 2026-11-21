@@ -1,0 +1,38 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start Backend Server",
+      "type": "shell",
+      "command": "npm run server",
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": {
+        "group": "servers",
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+    {
+      "label": "Start Frontend Client",
+      "type": "shell",
+      "command": "npm run client",
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": {
+        "group": "servers",
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+    {
+      "label": "Start Full Stack (Backend + Frontend)",
+      "dependsOn": [
+        "Start Backend Server",
+        "Start Frontend Client"
+      ],
+      "dependsOrder": "parallel",
+      "problemMatcher": []
+    }
+  ]
+}
